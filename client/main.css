@@ -1,0 +1,73 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.editor,
+.listing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.editor {
+  width: 40%;
+}
+
+.listing {
+  width: 60%;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .editor {
+    width: 100%;
+    height: 30%;
+  }
+
+  .listing {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.appointment {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment p {
+  margin: 5px 0;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
